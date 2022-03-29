@@ -1,2 +1,2 @@
 # Explore-Bhopal
-It is a website that is very useful for the students of VIT - Bhopal
+This is a website that can be of great use to VIT Bhopal students.
