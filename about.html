@@ -11,7 +11,6 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-
     <!-- ======================= -->
     <!-- ===========CSS========= -->
     <link rel="stylesheet" href="style.css" />
@@ -22,8 +21,11 @@
       src="https://kit.fontawesome.com/8e3b467419.js"
       crossorigin="anonymous"
     ></script>
+    <script src="script.js"></script>
+
     <!--Get your code at fontawesome.com-->
   </head>
+
   <body>
     <script type="text/javascript">
       var changes = false;
@@ -36,8 +38,6 @@
       };
     </script>
 
-    <!-- <br/>
-    <br/> -->
 
     <!-- =========NAVBAR========== -->
     <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
@@ -58,55 +58,48 @@
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
+          style="color: white"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span
+            ><img
+              src="Images/toggler.jpg"
+              alt="toggler"
+              height="35px"
+              width="45px"
+          /></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="padding-left: 60%">
+        <div
+          class="collapse navbar-collapse row justify-content-end"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav col-md-3">
             <!-- ===========HOME-NAVBAR=========== -->
-            <li class="nav-item" style="margin-left: 85%">
+            <li class="nav-item col-md-3">
               <a
                 class="nav-link"
                 aria-current="page"
                 href="index.html"
-                style="color: white; margin-top: 6px"
+                style="color: white"
                 onMouseOver="this.style.color='dimgray'"
                 onMouseOut="this.style.color='white'"
                 >Home</a
               >
             </li>
-            <!-- <li
-              class="nav-item"
-              style="padding-left: 10%;"
-            >
-              <a class="nav-link elem" href="#Malls" style="color: white;"
-              onMouseOver="this.style.color='dimgray'"
-              onMouseOut="this.style.color='white'" >Malls</a>
-            </li>
-            <li
-              class="nav-item"
-              style="padding-left: 10%;"
-            >
-              <a class="nav-link elem" href="#Attractions" style="color: white;"
-              onMouseOver="this.style.color='dimgray'"
-              onMouseOut="this.style.color='white'" 
-                >Attractions</a
+
+            <!-- ===========ABOUT US-NAVBAR=========== -->
+            <li class="nav-item col-md-3">
+              <a
+                class="nav-link"
+                href="about.html"
+                style="color: white"
+                onMouseOver="this.style.color='dimgray'"
+                onMouseOut="this.style.color='white'"
+                >About</a
               >
             </li>
-            <li
-              class="nav-item"
-              style="padding-left: 10%;"
-            >
-              <a class="nav-link elem" href="#Cafes"style="color: white;"
-              onMouseOver="this.style.color='dimgray'"
-              onMouseOut="this.style.color='white'"  >Cafes</a>
-            </li> -->
 
             <!-- ===========DROPDOWN-NAVBAR=========== -->
-            <li
-              class="nav-item dropdown"
-              style="margin-left: 40px; margin-top: 6px"
-            >
+            <li class="nav-item dropdown col-md-4">
               <a
                 class="nav-link dropdown-toggle"
                 href="#"
@@ -150,65 +143,64 @@
                 </li>
               </ul>
             </li>
-
-            <!-- ===========ABOUT US-NAVBAR=========== -->
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="AboutThePage.html"
-                style="
-                  color: white;
-                  margin-left: 30px;
-                  position: absolute;
-                  margin-top: 6px;
-                "
-                onMouseOver="this.style.color='dimgray'"
-                onMouseOut="this.style.color='white'"
-                >About</a
-              >
-            </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <div class="bg-dark">
-      <br />
-      <br />
-      <br />
-
-      <section class="about-sec">
-        <!-- <img src="Images/Explore Bhopal.png" alt="explore bhopal" class="about-imag" > -->
-        <div class="about-text">
-          <p class="exp">Explore</p>
-          <hr
+    <br />
+    <br />
+    <br />
+ 
+    <!-- ======================================= -->
+    <div style="background-color: black">
+      <div
+        class="container"
+        style="background-color: black; margin: 0px; padding: 0px; width: 100%"
+      >
+        <section class="about-sec row" style="margin: 0px; padding: 0px">
+          <!-- <img src="Images/Explore Bhopal.png" alt="explore bhopal" class="about-imag" > -->
+          <div class="about-text col-lg-9" style="margin: 0px; padding: 0px">
+            <p class="exp">Explore</p>
+            <hr
+              style="
+                height: 0.4vw;
+                width: 60vw;
+                color: solid rgb(145, 111, 23);
+                align-self: center;
+                margin-left: 55px;
+              "
+            />
+            <p class="bhp">Bhopal</p>
+          </div>
+          <div
+            class="col-lg-3"
             style="
-              height: 7px;
-              width: 850px;
-              color: solid rgb(145, 111, 23);
-              margin-left: 50px;
+              position: relative;
+              margin-bottom: 370px;
+              margin-left: 0px;
+              margin-right: 0px;
             "
-          />
-          <p class="bhp">Bhopal</p>
-        </div>
-
-        <div class="intro">
-          <p>
-            <i class="fa-solid fa-quote-left"></i>
-            Many people find going away to college and immersing themselves in a
-            new environment to be back-breaking. College will be your second
-            home. Moving to another city and figuring out what to do, where to
-            go, and what to see is exhausting and frustrating. You will need to
-            discover where you can go for shopping, for pleasure trips, and to
-            take a break from your daily routine. So we've created a
-            website that provides you with useful information. Thus, <b> EXPLORE
-            BHOPAL </b>comes to your rescue to solve all your problems.
-            <i class="fa-solid fa-quote-right"></i>
-          </p>
-        </div>
-      </section>
+          >
+            <div style="position: absolute; top: 30%">
+              <p class="intro">
+                <i class="fa-solid fa-quote-left"></i>
+                Many people find going away to college and immersing themselves
+                in a new environment to be back-breaking. College will be your
+                second home. Moving to another city and figuring out what to do,
+                where to go, and what to see is exhausting and frustrating. You
+                will need to discover where you can go for shopping, for
+                pleasure trips, and to take a break from your daily routine. So
+                we've created a website that provides you with useful
+                information. Thus, <b> EXPLORE BHOPAL </b>comes to your rescue
+                to solve all your problems.
+                <i class="fa-solid fa-quote-right"></i>
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
     </div>
-
     <div class="bg-dark">
       <br />
       <br />
@@ -223,9 +215,8 @@
       <br />
       <br />
     </div>
-    <!-- ======================================= -->
-
     <!-- ===============CONTACT================== -->
+
     <div class="bg-dark">
       <p
         style="
@@ -240,49 +231,64 @@
       </p>
 
       <!-- ===============CARDS FOF ABOUT US============= -->
-      <div class="card-group">
+      <div class="row justify-content-center" style="width: 100%">
         <!-- ===========AASHI=========== -->
+
         <div
-          class="card bg-dark"
-          style="margin: 8px; border-color: wheat; border-width: 5px"
+          class="card bg-dark col-lg-3"
+          style="
+            width: 350px;
+            margin: 10px;
+            border-width: 5px;
+            border-color: wheat;
+          "
         >
           <img
-            src="images/aashi2.jpeg"
+            src="Images/aashi2.jpeg"
             class="card-img-top"
-            alt="aashi"
-            style="height: 350px"
+            alt="aashi image"
+            height="350px"
           />
-          <div class="card-body">
-            <h5 class="card-title" style="color: white; text-align: center">
-              Aashi Jain
-            </h5>
-            <br />
-            <p class="card-text">
+          <div class="card-body container">
+            <p class="card-text row justify-content-center">
               <a
+                class="col"
                 href="https://www.linkedin.com/in/aashi-jain-437b02224"
                 target="_blank"
                 ><img
                   src="images/linked.jpg"
                   alt="linkedin"
-                  style="height: 30px; width: 30px; margin-left: 5px"
+                  style="height: 30px; width: 30px"
               /></a>
-              <a href="mailto:reachaashijain@gmail.com" target="_blank">
+              <a
+                class="col"
+                href="mailto:reachaashijain@gmail.com"
+                target="_blank"
+              >
                 <img
                   src="images/gmail.png"
                   alt="gmail"
-                  style="height: 30px; width: 30px; margin-left: 55px"
+                  style="height: 30px; width: 30px"
               /></a>
-              <a href="https://github.com/reachaashi" target="_blank">
+              <a
+                class="col"
+                href="https://github.com/reachaashi"
+                target="_blank"
+              >
                 <img
                   src="images/GitHub-Mark.png"
                   alt="github"
-                  style="height: 30px; width: 30px; margin-left: 55px"
+                  style="height: 30px; width: 30px"
               /></a>
-              <a href="https://www.instagram.com/axshey_/" target="_blank">
+              <a
+                class="col"
+                href="https://www.instagram.com/axshey_/"
+                target="_blank"
+              >
                 <img
                   src="images/ig.jpg"
                   alt="instagram"
-                  style="height: 30px; width: 30px; margin-left: 55px"
+                  style="height: 30px; width: 30px"
               /></a>
             </p>
           </div>
@@ -290,132 +296,185 @@
 
         <!-- ===========RAGHAV=========== -->
         <div
-          class="card bg-dark"
-          style="margin: 8px; border-color: wheat; border-width: 5px"
+          class="card bg-dark col-lg-3"
+          style="
+            width: 350px;
+            margin: 10px;
+            border-width: 5px;
+            border-color: wheat;
+          "
         >
-          <img src="images/soni.jpg" class="card-img-top" alt="soni" />
-          <div class="card-body">
-            <h5 class="card-title" style="color: white; text-align: center">
-              Raghav Soni
-            </h5>
-            <br />
-            <p class="card-text">
+          <img
+            src="Images/soni.jpg"
+            class="card-img-top"
+            alt="aashi image"
+            height="350px"
+          />
+
+          <div class="card-body container">
+            <p class="card-text row justify-content-center">
               <a
+                class="col"
                 href="https://www.linkedin.com/in/raghavsoni21/"
                 target="_blank"
                 ><img
                   src="images/linked.jpg"
                   alt="linkedin"
-                  style="height: 30px; width: 30px; margin-left: 5px"
+                  style="height: 30px; width: 30px"
               /></a>
-              <a href="mailto:soniraghav21@gmail.com" target="_blank">
+              <a
+                class="col"
+                href="mailto:soniraghav21@gmail.com"
+                target="_blank"
+              >
                 <img
                   src="images/gmail.png"
                   alt="gmail"
-                  style="height: 30px; width: 30px; margin-left: 55px"
+                  style="height: 30px; width: 30px"
               /></a>
-              <a href="https://github.com/RaghavSoni21" target="_blank">
+              <a
+                class="col"
+                href="https://github.com/RaghavSoni21"
+                target="_blank"
+              >
                 <img
                   src="images/GitHub-Mark.png"
                   alt="github"
-                  style="height: 30px; width: 30px; margin-left: 55px"
+                  style="height: 30px; width: 30px"
               /></a>
               <a
+                class="col"
                 href="https://www.instagram.com/raghavsoni_21/"
                 target="_blank"
               >
                 <img
                   src="images/ig.jpg"
                   alt="instagram"
-                  style="height: 30px; width: 30px; margin-left: 55px"
+                  style="height: 30px; width: 30px"
               /></a>
             </p>
           </div>
         </div>
 
         <!-- ===========SARWAGYA=========== -->
+
         <div
-          class="card bg-dark"
-          style="margin: 8px; border-color: wheat; border-width: 5px"
+          class="card bg-dark col-lg-3"
+          style="
+            width: 350px;
+            margin: 10px;
+            border-width: 5px;
+            border-color: wheat;
+          "
         >
-          <img src="images/sarwagya.jpeg" class="card-img-top" alt="sarwagya" />
-          <div class="card-body">
-            <h5 class="card-title" style="color: white; text-align: center">
-              Sarwagya Agarwal
-            </h5>
-            <br />
-            <p class="card-text">
+          <img
+            src="Images/sarwagya.jpeg"
+            class="card-img-top"
+            alt="aashi image"
+            height="350px"
+          />
+          <div class="card-body container">
+            <p class="card-text row justify-content-center">
               <a
+                class="col"
                 href="https://www.linkedin.com/in/sarwagya-agarwal-2003-/"
                 target="_blank"
                 ><img
                   src="images/linked.jpg"
                   alt="linkedin"
-                  style="height: 30px; width: 30px; margin-left: 5px"
+                  style="height: 30px; width: 30px"
               /></a>
-              <a href="mailto:sarwagyamxn17@gmail.com" target="_blank">
+              <a
+                class="col"
+                href="mailto:sarwagyamxn17@gmail.com"
+                target="_blank"
+              >
                 <img
                   src="images/gmail.png"
                   alt="gmail"
-                  style="height: 30px; width: 30px; margin-left: 55px"
+                  style="height: 30px; width: 30px"
               /></a>
-              <a href="https://github.com/Sarwagya123" target="_blank">
+              <a
+                class="col"
+                href="https://github.com/Sarwagya123"
+                target="_blank"
+              >
                 <img
                   src="images/GitHub-Mark.png"
                   alt="github"
-                  style="height: 30px; width: 30px; margin-left: 55px"
+                  style="height: 30px; width: 30px"
               /></a>
               <a
+                class="col"
                 href="https://www.instagram.com/sarwagyaagarwal/"
                 target="_blank"
               >
                 <img
                   src="images/ig.jpg"
                   alt="instagram"
-                  style="height: 30px; width: 30px; margin-left: 55px"
+                  style="height: 30px; width: 30px"
               /></a>
             </p>
           </div>
         </div>
 
         <!-- ===========TARUSHI=========== -->
+
         <div
-          class="card bg-dark"
-          style="margin: 8px; border-color: wheat; border-width: 5px"
+          class="card bg-dark col-lg-3"
+          style="
+            width: 350px;
+            margin: 10px;
+            border-width: 5px;
+            border-color: wheat;
+          "
         >
-          <img src="images/tarushi.jpeg" class="card-img-top" alt="tarushi" />
-          <div class="card-body">
-            <h5 class="card-title" style="color: white; text-align: center">
-              Tarushi Arora
-            </h5>
-            <br />
-            <p class="card-text">
-              <a href="http://linkedin.com/in/tarushiarora" target="_blank"
+          <img
+            src="Images/tarushi.jpeg"
+            class="card-img-top"
+            alt="aashi image"
+            height="350px"
+          />
+          <div class="card-body container">
+            <p class="card-text row justify-content-center">
+              <a
+                class="col"
+                href="http://linkedin.com/in/tarushiarora"
+                target="_blank"
                 ><img
                   src="images/linked.jpg"
                   alt="linkedin"
-                  style="height: 30px; width: 30px; margin-left: 5px"
+                  style="height: 30px; width: 30px"
               /></a>
-              <a href="mailto:tarushiarora2525@gmail.com" target="_blank">
+              <a
+                class="col"
+                href="mailto:tarushiarora2525@gmail.com"
+                target="_blank"
+              >
                 <img
                   src="images/gmail.png"
                   alt="gmail"
-                  style="height: 30px; width: 30px; margin-left: 55px"
+                  style="height: 30px; width: 30px"
               /></a>
-              <a href="https://github.com/tarushiarora" target="_blank">
+              <a
+                class="col"
+                href="https://github.com/tarushiarora"
+                target="_blank"
+              >
                 <img
                   src="images/GitHub-Mark.png"
                   alt="github"
-                  style="height: 30px; width: 30px; margin-left: 55px"
+                  style="height: 30px; width: 30px"
               /></a>
               <a
+                class="col"
                 href="https://www.instagram.com/tarushi_arora25/"
                 target="_blank"
               >
                 <img
                   src="images/ig.jpg"
                   alt="instagram"
-                  style="height: 30px; width: 30px; margin-left: 55px"
+                  style="height: 30px; width: 30px"
               /></a>
             </p>
           </div>
@@ -450,5 +509,19 @@
           <a class="au" href="#Contacts">About us</a> -->
       <!-- </div> -->
     </footer>
+    <!-- =========FOR BOOTSTRAP ========= -->
+    <script>
+      src =
+        "https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js";
+      integrity =
+        "sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB";
+      crossorigin = "anonymous";
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+    <!-- ================================ -->
   </body>
 </html>

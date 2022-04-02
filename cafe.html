@@ -11,9 +11,9 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    
+
     <!-- ======================= -->
-    <link rel="icon" type="image/x-icon" href="Images/LOGO.png">
+    <link rel="icon" type="image/x-icon" href="Images/LOGO.png" />
     <!-- ===========CSS========= -->
     <link rel="stylesheet" href="style.css" />
     <!-- ====================== -->
@@ -29,12 +29,9 @@
         }
       };
     </script>
-    
+
     <!-- =========NAVBAR========== -->
-    <nav
-      class="navbar navbar-expand-lg navbar-light bg-dark fixed-top"
-      
-    >
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="https://vitbhopal.ac.in/" target="_blank">
           <img
@@ -52,55 +49,48 @@
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
+          style="color: white"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span
+            ><img
+              src="Images/toggler.jpg"
+              alt="toggler"
+              height="35px"
+              width="45px"
+          /></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="padding-left: 60%">
+        <div
+          class="collapse navbar-collapse row justify-content-end"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav col-md-3">
             <!-- ===========HOME-NAVBAR=========== -->
-            <li class="nav-item" style="margin-left: 85%">
+            <li class="nav-item col-md-3">
               <a
                 class="nav-link"
                 aria-current="page"
                 href="index.html"
-                style="color: white; margin-top: 6px"
+                style="color: white"
                 onMouseOver="this.style.color='dimgray'"
                 onMouseOut="this.style.color='white'"
                 >Home</a
               >
             </li>
-            <!-- <li
-              class="nav-item"
-              style="padding-left: 10%;"
-            >
-              <a class="nav-link elem" href="#Malls" style="color: white;"
-              onMouseOver="this.style.color='dimgray'"
-              onMouseOut="this.style.color='white'" >Malls</a>
-            </li>
-            <li
-              class="nav-item"
-              style="padding-left: 10%;"
-            >
-              <a class="nav-link elem" href="#Attractions" style="color: white;"
-              onMouseOver="this.style.color='dimgray'"
-              onMouseOut="this.style.color='white'" 
-                >Attractions</a
+
+            <!-- ===========ABOUT US-NAVBAR=========== -->
+            <li class="nav-item col-md-3">
+              <a
+                class="nav-link"
+                href="about.html"
+                style="color: white"
+                onMouseOver="this.style.color='dimgray'"
+                onMouseOut="this.style.color='white'"
+                >About</a
               >
             </li>
-            <li
-              class="nav-item"
-              style="padding-left: 10%;"
-            >
-              <a class="nav-link elem" href="#Cafes"style="color: white;"
-              onMouseOver="this.style.color='dimgray'"
-              onMouseOut="this.style.color='white'"  >Cafes</a>
-            </li> -->
 
             <!-- ===========DROPDOWN-NAVBAR=========== -->
-            <li
-              class="nav-item dropdown"
-              style="margin-left: 40px; margin-top: 6px"
-            >
+            <li class="nav-item dropdown col-md-4">
               <a
                 class="nav-link dropdown-toggle"
                 href="#"
@@ -143,23 +133,6 @@
                   >
                 </li>
               </ul>
-            </li>
-
-            <!-- ===========ABOUT US-NAVBAR=========== -->
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="about.html"
-                style="
-                  color: white;
-                  margin-left: 30px;
-                  position: absolute;
-                  margin-top: 6px;
-                "
-                onMouseOver="this.style.color='dimgray'"
-                onMouseOut="this.style.color='white'"
-                >About</a
-              >
             </li>
           </ul>
         </div>
@@ -217,17 +190,10 @@
       <!-- ============Shakes Appeal============ -->
       <div
         class="card mb-3 bg-dark"
-        style="
-          padding-top: 110px;
-          padding-bottom: 100px;
-          padding-right: 100px;
-          padding-left: 200px;
-          border: none;
-          margin-left: 70px;
-        "
+        style="margin: 7%; margin-top: 4%; border: none"
         id="Cafes"
       >
-        <div class="row g-5">
+        <div class="row justify-content-center">
           <div class="col-md-3 zoom">
             <img
               src="images/shakes appeal.jpg"
@@ -237,7 +203,7 @@
             />
           </div>
           <div class="col-md-5">
-            <div class="card-body" style="padding-top: 0px">
+            <div class="card-body">
               <h5
                 class="card-title"
                 style="
@@ -248,24 +214,25 @@
               >
                 Shakes Appeal Cafe
               </h5>
-              <p class="card-text" style="color: white">
+              <p class="card-text" style="color: white; font-size: 15px">
                 One stop destination for all your cravings. It has a huge
                 variety of premium fast food.
               </p>
               <p class="card-text" style="color: white">
                 <a
-                href="https://g.page/shakesappeal?share"
-                target="_blank"
-                style="color: white"
+                  href="https://g.page/shakesappeal?share"
+                  target="_blank"
+                  style="color: white; font-size: 14px"
                 >
-                <small> From VIT Bhopal: 1hr 15mins [64 km]</small></a>
+                  <small> From VIT Bhopal: 1hr 15mins [64 km]</small></a
+                >
               </p>
               <p class="card-text">
                 <small class="text-muted"
                   ><a
                     href="https://shakesappeal.business.site/"
                     target="_blank"
-                    style="color: wheat"
+                    style="color: wheat; font-size: 13px"
                     >Read More</a
                   ></small
                 >
@@ -278,26 +245,19 @@
       <!-- ============The Public House Restaurant============ -->
       <div
         class="card mb-3 bg-dark"
-        style="
-          margin: 10px;
-          margin-top: 30px;
-          padding: 30px;
-          padding-left: 200px;
-          border: none;
-          margin-left: 70px;
-        "
+        style="margin: 7%; margin-top: 5%; border: none"
       >
-        <div class="row g-5">
+        <div class="row justify-content-center">
           <div class="col-md-3 zoom">
             <img
-              src="images/the public house.jpg"
+              src="images/public house restrau.jpg"
               class="img-fluid rounded-start"
               alt="db mall"
               style="height: 200px; width: 300px"
             />
           </div>
           <div class="col-md-5">
-            <div class="card-body" style="padding-top: 0px">
+            <div class="card-body">
               <h5
                 class="card-title"
                 style="
@@ -308,25 +268,26 @@
               >
                 The Public House Restaurant
               </h5>
-              <p class="card-text" style="color: white">
+              <p class="card-text" style="color: white; font-size: 15px">
                 Dinner is better when we eat together says the Public House.
                 It's beautiful ambience and delectable food will make your day
                 worthwhile and memorable.
               </p>
               <p class="card-text" style="color: white">
                 <a
-                href="https://goo.gl/maps/PVGqgA2paVYihPhx8"
-                target="_blank"
-                style="color: white"
+                  href="https://goo.gl/maps/PVGqgA2paVYihPhx8"
+                  target="_blank"
+                  style="color: white; font-size: 14px"
                 >
-                <small> From VIT Bhopal: 1hr 25mins [72 km]</small></a>
+                  <small> From VIT Bhopal: 1hr 25mins [72 km]</small></a
+                >
               </p>
               <p class="card-text">
                 <small class="text-muted"
                   ><a
                     href="https://thepublichousebhopal.com/"
                     target="_blank"
-                    style="color: wheat"
+                    style="color: wheat; font-size: 13px"
                     >Read More</a
                   ></small
                 >
@@ -339,14 +300,9 @@
       <!-- ============Bake N Shake============ -->
       <div
         class="card mb-3 bg-dark"
-        style="
-          padding: 60px;
-          padding-left: 200px;
-          border: none;
-          margin-left: 70px;
-        "
+        style="margin: 7%; margin-top: 5%; border: none"
       >
-        <div class="row g-5">
+        <div class="row justify-content-center">
           <div class="col-md-3 zoom">
             <img
               src="images/bakenshake.jpg"
@@ -356,7 +312,7 @@
             />
           </div>
           <div class="col-md-5">
-            <div class="card-body" style="padding-top: 0px">
+            <div class="card-body">
               <h5
                 class="card-title"
                 style="
@@ -367,25 +323,26 @@
               >
                 Bake N Shake
               </h5>
-              <p class="card-text" style="color: white">
+              <p class="card-text" style="color: white; font-size: 15px">
                 The team provides variety of flavours of sweet baked goods with
                 other fast food items. Dine with them to dig in some amazing
                 speciality of cookies and cakes.
               </p>
               <p class="card-text" style="color: white">
                 <a
-                href="https://goo.gl/maps/Qv9G3MY91aqHXdEg9"
-                target="_blank"
-                style="color: white"
+                  href="https://goo.gl/maps/Qv9G3MY91aqHXdEg9"
+                  target="_blank"
+                  style="color: white; font-size: 14px"
                 >
-                <small> From VIT Bhopal: 1hr 30mins [74 km]</small></a>
+                  <small> From VIT Bhopal: 1hr 30mins [74 km]</small></a
+                >
               </p>
               <p class="card-text">
                 <small class="text-muted"
                   ><a
                     href="https://www.bakenshake.in/"
                     target="_blank"
-                    style="color: wheat"
+                    style="color: wheat; font-size: 13px"
                     >Read More</a
                   ></small
                 >
@@ -398,14 +355,9 @@
       <!-- ============Caffeine Mug Cafe============ -->
       <div
         class="card mb-3 bg-dark"
-        style="
-          padding: 60px;
-          padding-left: 200px;
-          border: none;
-          margin-left: 70px;
-        "
+        style="margin: 7%; margin-top: 5%; border: none"
       >
-        <div class="row g-5">
+        <div class="row justify-content-center">
           <div class="col-md-3 zoom">
             <img
               src="images/caffeine-mug-cafe.jpg"
@@ -415,7 +367,7 @@
             />
           </div>
           <div class="col-md-5">
-            <div class="card-body" style="padding-top: 0px">
+            <div class="card-body">
               <h5
                 class="card-title"
                 style="
@@ -426,24 +378,25 @@
               >
                 Caffeine Mug Cafe
               </h5>
-              <p class="card-text" style="color: white">
+              <p class="card-text" style="color: white; font-size: 15px">
                 The menu ranging from coffee, tea, sandwiches and many more.
                 Indoor and Outdoor seating arrangement with fun filled games.
               </p>
               <p class="card-text" style="color: white">
                 <a
-                href="https://g.page/caffeinemugcafe?share"
-                target="_blank"
-                style="color: white"
+                  href="https://g.page/caffeinemugcafe?share"
+                  target="_blank"
+                  style="color: white; font-size: 14px"
                 >
-                <small> From VIT Bhopal: 1hr 25mins [73 km]</small></a>
+                  <small> From VIT Bhopal: 1hr 25mins [73 km]</small></a
+                >
               </p>
               <p class="card-text">
                 <small class="text-muted"
                   ><a
                     href="https://caffeinemugcafe.business.site/"
                     target="_blank"
-                    style="color: wheat"
+                    style="color: wheat; font-size: 13px"
                     >Read More</a
                   ></small
                 >
@@ -456,14 +409,9 @@
       <!-- ============Shahi Durbar============ -->
       <div
         class="card mb-3 bg-dark"
-        style="
-          padding: 60px;
-          padding-left: 200px;
-          border: none;
-          margin-left: 70px;
-        "
+        style="margin: 7%; margin-top: 5%; border: none"
       >
-        <div class="row g-5">
+        <div class="row justify-content-center">
           <div class="col-md-3 zoom">
             <img
               src="images/shahi durbar2.jpg"
@@ -473,7 +421,7 @@
             />
           </div>
           <div class="col-md-5">
-            <div class="card-body" style="padding-top: 0px">
+            <div class="card-body">
               <h5
                 class="card-title"
                 style="
@@ -484,24 +432,25 @@
               >
                 Shahi Durbar
               </h5>
-              <p class="card-text" style="color: white">
+              <p class="card-text" style="color: white; font-size: 15px">
                 The most authentic destination to visit with your friends and
                 family.
               </p>
               <p class="card-text" style="color: white">
                 <a
-                href="https://goo.gl/maps/ST66PVCpzPhj1w8D9"
-                target="_blank"
-                style="color: white"
+                  href="https://goo.gl/maps/ST66PVCpzPhj1w8D9"
+                  target="_blank"
+                  style="color: white; font-size: 14px"
                 >
-                <small> From VIT Bhopal: 1hr 20mins [69 km]</small></a>
+                  <small> From VIT Bhopal: 1hr 20mins [69 km]</small></a
+                >
               </p>
               <p class="card-text">
                 <small class="text-muted"
                   ><a
                     href="https://restaurant-guru.in/Ice-Cream-Factory-and-Shahi-Darbar-Bhopal"
                     target="_blank"
-                    style="color: wheat"
+                    style="color: wheat; font-size: 13px"
                     >Read More</a
                   ></small
                 >
@@ -514,15 +463,9 @@
       <!-- ============Rolls Mania============ -->
       <div
         class="card mb-3 bg-dark"
-        style="
-          padding: 100px;
-          padding-left: 200px;
-          border: none;
-          margin-left: 70px;
-        "
-        id="Cafes"
+        style="margin: 7%; margin-top: 5%; border: none"
       >
-        <div class="row g-5">
+        <div class="row justify-content-center">
           <div class="col-md-3 zoom">
             <img
               src="images/rolls.jpg"
@@ -532,7 +475,7 @@
             />
           </div>
           <div class="col-md-5">
-            <div class="card-body" style="padding-top: 0px">
+            <div class="card-body">
               <h5
                 class="card-title"
                 style="
@@ -543,25 +486,26 @@
               >
                 Rolls Mania
               </h5>
-              <p class="card-text" style="color: white">
+              <p class="card-text" style="color: white; font-size: 15px">
                 Rolls for taste and coffee for souls describes the Rolls Mania.
                 It can be one of the cafe in your list when planning for a
                 weekend getaway.
               </p>
               <p class="card-text" style="color: white">
                 <a
-                href="https://goo.gl/maps/yTch7bT5aF6hadH18"
-                target="_blank"
-                style="color: white"
+                  href="https://goo.gl/maps/yTch7bT5aF6hadH18"
+                  target="_blank"
+                  style="color: white; font-size: 14px"
                 >
-                <small> From VIT Bhopal: 1hr 40mins [77 km]</small></a>
+                  <small> From VIT Bhopal: 1hr 40mins [77 km]</small></a
+                >
               </p>
               <p class="card-text">
                 <small class="text-muted"
                   ><a
                     href="https://www.rollsmania.com/"
                     target="_blank"
-                    style="color: wheat"
+                    style="color: wheat; font-size: 13px"
                     >Read More</a
                   ></small
                 >
@@ -574,15 +518,9 @@
       <!-- ============Cake Walk============ -->
       <div
         class="card mb-3 bg-dark"
-        style="
-          padding: 100px;
-          padding-left: 200px;
-          border: none;
-          margin-left: 70px;
-        "
-        id="Cafes"
+        style="margin: 7%; margin-top: 5%; border: none"
       >
-        <div class="row g-5">
+        <div class="row justify-content-center">
           <div class="col-md-3 zoom">
             <img
               src="images/cakewalk.png"
@@ -592,7 +530,7 @@
             />
           </div>
           <div class="col-md-5">
-            <div class="card-body" style="padding-top: 0px">
+            <div class="card-body">
               <h5
                 class="card-title"
                 style="
@@ -603,24 +541,25 @@
               >
                 Cakewalk
               </h5>
-              <p class="card-text" style="color: white">
+              <p class="card-text" style="color: white; font-size: 15px">
                 When it comes to dessert part Cakewalk is the place to walk in
                 anytime.
               </p>
               <p class="card-text" style="color: white">
                 <a
-                href="https://goo.gl/maps/xXGtmrrx2eEkMHz1A"
-                target="_blank"
-                style="color: white"
+                  href="https://goo.gl/maps/xXGtmrrx2eEkMHz1A"
+                  target="_blank"
+                  style="color: white; font-size: 14px"
                 >
-                <small> From VIT Bhopal: 1hr 30mins [72 km]</small></a>
+                  <small> From VIT Bhopal: 1hr 30mins [72 km]</small></a
+                >
               </p>
               <p class="card-text">
                 <small class="text-muted"
                   ><a
                     href="https://restaurant-guru.in/Cakewalk-Bhopal-2"
                     target="_blank"
-                    style="color: wheat"
+                    style="color: wheat; font-size: 13px"
                     >Read More</a
                   ></small
                 >
@@ -633,15 +572,9 @@
       <!-- ============The Brunch House============ -->
       <div
         class="card mb-3 bg-dark"
-        style="
-          padding: 100px;
-          padding-left: 200px;
-          border: none;
-          margin-left: 70px;
-        "
-        id="Cafes"
+        style="margin: 7%; margin-top: 5%; border: none"
       >
-        <div class="row g-5">
+        <div class="row justify-content-center">
           <div class="col-md-3 zoom">
             <img
               src="images/brunch.jpg"
@@ -651,7 +584,7 @@
             />
           </div>
           <div class="col-md-5">
-            <div class="card-body" style="padding-top: 0px">
+            <div class="card-body">
               <h5
                 class="card-title"
                 style="
@@ -662,24 +595,25 @@
               >
                 The Brunch House
               </h5>
-              <p class="card-text" style="color: white">
+              <p class="card-text" style="color: white; font-size: 15px">
                 The Brunch House restaurant serves flavoursome food with
                 excellent service. It is also famous for its 'bahubali thali'.
               </p>
               <p class="card-text" style="color: white">
                 <a
-                href="https://g.page/TBHResto?share"
-                target="_blank"
-                style="color: white"
+                  href="https://g.page/TBHResto?share"
+                  target="_blank"
+                  style="color: white; font-size: 14px"
                 >
-                <small> From VIT Bhopal: 1hr 30mins [74 km]</small></a>
+                  <small> From VIT Bhopal: 1hr 30mins [74 km]</small></a
+                >
               </p>
               <p class="card-text">
                 <small class="text-muted"
                   ><a
                     href="https://nicelocal.in/bhopal/restaurants/the_brunch_house_pure_veg_restaurant/"
                     target="_blank"
-                    style="color: wheat"
+                    style="color: wheat; font-size: 13px"
                     >Read More</a
                   ></small
                 >
@@ -692,27 +626,19 @@
       <!-- ============Alfresco============ -->
       <div
         class="card mb-3 bg-dark"
-        style="
-          padding-top: 100px;
-          padding-bottom: 40px;
-          padding-left: 200px;
-          padding-right: 100px;
-          border: none;
-          margin-left: 70px;
-        "
-        id="Cafes"
+        style="margin: 7%; margin-top: 5%; border: none"
       >
-        <div class="row g-5">
+        <div class="row justify-content-center">
           <div class="col-md-3 zoom">
             <img
-              src="images/alfresco.jpg"
+              src="images/alfreso-new.jpeg"
               class="img-fluid rounded-start"
               alt="db mall"
               style="height: 200px; width: 300px"
             />
           </div>
           <div class="col-md-5">
-            <div class="card-body" style="padding-top: 0px">
+            <div class="card-body">
               <h5
                 class="card-title"
                 style="
@@ -723,24 +649,25 @@
               >
                 Alfresco
               </h5>
-              <p class="card-text" style="color: white">
+              <p class="card-text" style="color: white; font-size: 15px">
                 Experience the taste of impromptu creations- a perfect blend of
                 experiences, cultures and flavours!
               </p>
               <p class="card-text" style="color: white">
                 <a
-                href="https://goo.gl/maps/oLszRUAKzzoVzKACA"
-                target="_blank"
-                style="color: white"
+                  href="https://goo.gl/maps/oLszRUAKzzoVzKACA"
+                  target="_blank"
+                  style="color: white; font-size: 14px"
                 >
-                <small> From VIT Bhopal: 1hr 35mins [76 km]</small></a>
+                  <small> From VIT Bhopal: 1hr 35mins [76 km]</small></a
+                >
               </p>
               <p class="card-text">
                 <small class="text-muted"
                   ><a
                     href="https://alfresco-by-chef-raizada.business.site/"
                     target="_blank"
-                    style="color: wheat"
+                    style="color: wheat; font-size: 13px"
                     >Read More</a
                   ></small
                 >
