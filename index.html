@@ -15,7 +15,7 @@
     <!-- ===========CSS========= -->
     <link rel="stylesheet" href="style.css" />
     <!-- ====================== -->
-    <link rel="icon" type="image/x-icon" href="Images/LOGO.png">
+    <link rel="icon" type="image/x-icon" href="Images/LOGO.png" />
     <!-- ========= Icon ========-->
     <script
       src="https://kit.fontawesome.com/8e3b467419.js"
@@ -60,55 +60,48 @@
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
+          style="color: white"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span
+            ><img
+              src="Images/toggler.jpg"
+              alt="toggler"
+              height="35px"
+              width="45px"
+          /></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="padding-left: 60%">
+        <div
+          class="collapse navbar-collapse row justify-content-end"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav col-md-3">
             <!-- ===========HOME-NAVBAR=========== -->
-            <li class="nav-item" style="margin-left: 85%">
+            <li class="nav-item col-md-3">
               <a
                 class="nav-link"
                 aria-current="page"
                 href="#home"
-                style="color: white; margin-top: 6px"
+                style="color: white"
                 onMouseOver="this.style.color='dimgray'"
                 onMouseOut="this.style.color='white'"
                 >Home</a
               >
             </li>
-            <!-- <li
-              class="nav-item"
-              style="padding-left: 10%;"
-            >
-              <a class="nav-link elem" href="#Malls" style="color: white;"
-              onMouseOver="this.style.color='dimgray'"
-              onMouseOut="this.style.color='white'" >Malls</a>
-            </li>
-            <li
-              class="nav-item"
-              style="padding-left: 10%;"
-            >
-              <a class="nav-link elem" href="#Attractions" style="color: white;"
-              onMouseOver="this.style.color='dimgray'"
-              onMouseOut="this.style.color='white'" 
-                >Attractions</a
+
+            <!-- ===========ABOUT US-NAVBAR=========== -->
+            <li class="nav-item col-md-3">
+              <a
+                class="nav-link"
+                href="about.html"
+                style="color: white"
+                onMouseOver="this.style.color='dimgray'"
+                onMouseOut="this.style.color='white'"
+                >About</a
               >
             </li>
-            <li
-              class="nav-item"
-              style="padding-left: 10%;"
-            >
-              <a class="nav-link elem" href="#Cafes"style="color: white;"
-              onMouseOver="this.style.color='dimgray'"
-              onMouseOut="this.style.color='white'"  >Cafes</a>
-            </li> -->
-
+            
             <!-- ===========DROPDOWN-NAVBAR=========== -->
-            <li
-              class="nav-item dropdown"
-              style="margin-left: 40px; margin-top: 6px"
-            >
+            <li class="nav-item dropdown col-md-4">
               <a
                 class="nav-link dropdown-toggle"
                 href="#"
@@ -151,23 +144,6 @@
                   >
                 </li>
               </ul>
-            </li>
-
-            <!-- ===========ABOUT US-NAVBAR=========== -->
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="about.html"
-                style="
-                  color: white;
-                  margin-left: 30px;
-                  position: absolute;
-                  margin-top: 6px;
-                "
-                onMouseOver="this.style.color='dimgray'"
-                onMouseOut="this.style.color='white'"
-                >About</a
-              >
             </li>
           </ul>
         </div>
@@ -284,16 +260,9 @@
       <!-- ============DB MALL============ -->
       <div
         class="card mb-3 bg-dark"
-        style="
-          margin: 5px;
-          margin-top: 30px;
-          padding: 30px;
-          padding-left: 200px;
-          border: none;
-          margin-left: 70px;
-        "
+        style="margin: 7%; margin-top: 4%; border: none"
       >
-        <div class="row g-5">
+        <div class="row justify-content-center">
           <div class="col-md-3">
             <img
               src="images/db mall2.jpg"
@@ -303,7 +272,7 @@
             />
           </div>
           <div class="col-md-5">
-            <div class="card-body" style="padding-top: 20px">
+            <div class="card-body">
               <h5
                 class="card-title"
                 style="
@@ -314,7 +283,7 @@
               >
                 DB City Mall
               </h5>
-              <p class="card-text" style="color: white">
+              <p class="card-text" style="color: white; font-size: 15px">
                 Situated in the heart of Bhopal, it is the 11th largest shopping
                 mall in India and the most famous spot for the shopping freaks
                 in Bhopal!
@@ -324,7 +293,7 @@
                   ><a
                     href="http://www.dbcity.in/"
                     target="_blank"
-                    style="color: wheat"
+                    style="color: wheat; font-size: 13px"
                     >Read More</a
                   ></small
                 >
@@ -338,15 +307,12 @@
       <div
         class="card mb-3 bg-dark"
         style="
-          margin: 10px;
-          margin-top: 30px;
-          padding: 30px;
-          padding-left: 200px;
+          margin: 7%;
+
           border: none;
-          margin-left: 70px;
         "
       >
-        <div class="row g-5">
+        <div class="row justify-content-center">
           <div class="col-md-3">
             <img
               src="images/people mall.jpg"
@@ -356,18 +322,18 @@
             />
           </div>
           <div class="col-md-5">
-            <div class="card-body" style="padding-top: 20px">
+            <div class="card-body">
               <h5
                 class="card-title"
                 style="
                   color: white;
-                  font-size: 4vw;
+                  font-size: 30px;
                   font-family: 'Times New Roman', Times, serif;
                 "
               >
                 People's Mall
               </h5>
-              <p class="card-text" style="color: white">
+              <p class="card-text" style="color: white; font-size: 15px">
                 Sprawling across a huge outdoor area, the People's Mall is the
                 best place to get a tourist feeling when it comes to visiting
                 the replicas of the greatest buildings around the world!
@@ -377,7 +343,7 @@
                   ><a
                     href="https://www.triphobo.com/places/bhopal-india/people-s-mall"
                     target="_blank"
-                    style="color: wheat"
+                    style="color: wheat; font-size: 13px"
                     >Read More</a
                   ></small
                 >
@@ -387,7 +353,7 @@
         </div>
       </div>
       <!-- ================VIEW MORE BUTTON============== -->
-      <div style="text-align: center">
+      <div style="text-align: center; margin-top: 3%">
         <a
           class="btn planitinerary-btn"
           style="background: #e33d3d; color: #fff; margin: 20px"
@@ -428,16 +394,9 @@
       <!-- ============UDAYAGIRI CAVES============ -->
       <div
         class="card mb-3 bg-dark"
-        style="
-          margin: 5px;
-          margin-top: 30px;
-          padding: 30px;
-          padding-left: 200px;
-          border: none;
-          margin-left: 70px;
-        "
+        style="margin: 7%; margin-top: 4%; border: none"
       >
-        <div class="row g-5">
+        <div class="row justify-content-center">
           <div class="col-md-3">
             <img
               src="images/udayagiri caves.jpg"
@@ -458,7 +417,7 @@
               >
                 Udayagiri Caves
               </h5>
-              <p class="card-text" style="color: white">
+              <p class="card-text" style="color: white; font-size: 15px">
                 Udayagiri caves is 60 Kms from Bhopal. These are twenty rock-cut
                 caves of Hindus and Jain panthons. They were made during the
                 Gupta period.
@@ -468,7 +427,7 @@
                   ><a
                     href="https://placeandsee.com/wiki/udayagiri-caves"
                     target="_blank"
-                    style="color: wheat"
+                    style="color: wheat; font-size: 13px"
                     >Read More</a
                   ></small
                 >
@@ -479,18 +438,8 @@
       </div>
 
       <!-- ============VAN VIHAR============ -->
-      <div
-        class="card mb-3 bg-dark"
-        style="
-          margin: 10px;
-          margin-top: 30px;
-          padding: 30px;
-          padding-left: 200px;
-          border: none;
-          margin-left: 70px;
-        "
-      >
-        <div class="row g-5">
+      <div class="card mb-3 bg-dark" style="margin: 7%; border: none">
+        <div class="row justify-content-center">
           <div class="col-md-3">
             <img
               src="images/van vihar.jpeg"
@@ -511,7 +460,7 @@
               >
                 Van Vihar National Park
               </h5>
-              <p class="card-text" style="color: white">
+              <p class="card-text" style="color: white; font-size: 15px">
                 It is an amazing world of winged creatures, free ranging
                 ungulates and captive carnivores in the midst of greenery.
               </p>
@@ -520,7 +469,7 @@
                   ><a
                     href="https://vanviharnationalpark.org/"
                     target="_blank"
-                    style="color: wheat"
+                    style="color: wheat; font-size: 13px"
                     >Read More</a
                   ></small
                 >
@@ -531,18 +480,8 @@
       </div>
 
       <!-- ============MUSEUM============ -->
-      <div
-        class="card mb-3 bg-dark"
-        style="
-          margin: 10px;
-          margin-top: 30px;
-          padding: 30px;
-          padding-left: 200px;
-          border: none;
-          margin-left: 70px;
-        "
-      >
-        <div class="row g-5">
+      <div class="card mb-3 bg-dark" style="margin: 7%; border: none">
+        <div class="row justify-content-center">
           <div class="col-md-3">
             <img
               src="images/museum.jpeg"
@@ -563,7 +502,7 @@
               >
                 National Museum of Mankind
               </h5>
-              <p class="card-text" style="color: white">
+              <p class="card-text" style="color: white; font-size: 15px">
                 The Indira Gandhi Rashtriya Manav Sangrahalaya (National Museum
                 of Mankind) is an anthropology museum that carries the stories
                 of human and cultural evolution in India.
@@ -573,7 +512,7 @@
                   ><a
                     href="https://bhopal.tourismindia.co.in/indira-gandhi-rashtriya-manav-sangrahalaya-national-museum-of-mankind-bhopal"
                     target="_blank"
-                    style="color: wheat"
+                    style="color: wheat; font-size: 13px"
                     >Read More</a
                   ></small
                 >
@@ -584,18 +523,8 @@
       </div>
 
       <!-- ============TEMPLE============ -->
-      <div
-        class="card mb-3 bg-dark"
-        style="
-          margin: 10px;
-          margin-top: 30px;
-          padding: 30px;
-          padding-left: 200px;
-          border: none;
-          margin-left: 70px;
-        "
-      >
-        <div class="row g-5">
+      <div class="card mb-3 bg-dark" style="margin: 7%; border: none">
+        <div class="row justify-content-center">
           <div class="col-md-3">
             <img
               src="images/bhoj temple.jpg"
@@ -616,7 +545,7 @@
               >
                 Bhojpur Temple
               </h5>
-              <p class="card-text" style="color: white">
+              <p class="card-text" style="color: white; font-size: 15px">
                 Bhojpur temple near Bhopal has one of the largest Shivaling cut
                 from one rock. It is famous for the incomplete Bhojesvar temple
                 dedicated to Lord Shiva.
@@ -626,7 +555,7 @@
                   ><a
                     href="https://www.tripadvisor.in/Attraction_Review-g1508512-d3683205-Reviews-Bhojeshwar_Temple-Bhojpur_Raisen_District_Madhya_Pradesh.html"
                     target="_blank"
-                    style="color: wheat"
+                    style="color: wheat; font-size: 13px"
                     >Read More</a
                   ></small
                 >
@@ -636,7 +565,7 @@
         </div>
       </div>
       <!-- ================VIEW MORE BUTTON============== -->
-      <div style="text-align: center">
+      <div style="text-align: center; margin-top: 3%">
         <a
           class="btn planitinerary-btn"
           style="background: #e33d3d; color: #fff; margin: 20px"
@@ -675,16 +604,9 @@
       <!-- ============CARDS FOR CAFES============ -->
       <div
         class="card mb-3 bg-dark"
-        style="
-          margin: 5px;
-          margin-top: 30px;
-          padding: 30px;
-          padding-left: 200px;
-          border: none;
-          margin-left: 70px;
-        "
+        style="margin: 7%; margin-top: 4%; border: none"
       >
-        <div class="row g-5">
+        <div class="row justify-content-center">
           <div class="col-md-3">
             <img
               src="images/shakes appeal 2.jpg"
@@ -705,7 +627,7 @@
               >
                 Shakes Appeal Cafe
               </h5>
-              <p class="card-text" style="color: white">
+              <p class="card-text" style="color: white; font-size: 15px">
                 One stop destination for all your cravings. It has a huge
                 variety of premium fast food.
               </p>
@@ -714,7 +636,7 @@
                   ><a
                     href="https://shakesappeal.business.site/"
                     target="_blank"
-                    style="color: wheat"
+                    style="color: wheat; font-size: 13px"
                     >Read More</a
                   ></small
                 >
@@ -724,21 +646,11 @@
         </div>
       </div>
 
-      <div
-        class="card mb-3 bg-dark"
-        style="
-          margin: 10px;
-          margin-top: 30px;
-          padding: 30px;
-          padding-left: 200px;
-          border: none;
-          margin-left: 70px;
-        "
-      >
-        <div class="row g-5">
+      <div class="card mb-3 bg-dark" style="margin: 7%; border: none">
+        <div class="row justify-content-center">
           <div class="col-md-3">
             <img
-              src="images/the public house.jpg"
+              src="images/public house restrau.jpg"
               class="img-fluid rounded-start"
               alt="db mall"
               style="height: 200px; width: 300px"
@@ -756,7 +668,7 @@
               >
                 The Public House Restaurant
               </h5>
-              <p class="card-text" style="color: white">
+              <p class="card-text" style="color: white; font-size: 15px">
                 Dinner is better when we eat together says the Public House.
                 It's beautiful ambience and delectable food will make your day
                 worthwhile and memorable.
@@ -766,7 +678,7 @@
                   ><a
                     href="https://thepublichousebhopal.com/"
                     target="_blank"
-                    style="color: wheat"
+                    style="color: wheat; font-size: 13px"
                     >Read More</a
                   ></small
                 >
@@ -776,18 +688,8 @@
         </div>
       </div>
 
-      <div
-        class="card mb-3 bg-dark"
-        style="
-          margin: 10px;
-          margin-top: 30px;
-          padding: 30px;
-          padding-left: 200px;
-          border: none;
-          margin-left: 70px;
-        "
-      >
-        <div class="row g-5">
+      <div class="card mb-3 bg-dark" style="margin: 7%; border: none">
+        <div class="row justify-content-center">
           <div class="col-md-3">
             <img
               src="images/bakenshake.jpg"
@@ -808,7 +710,7 @@
               >
                 Bake N Shake
               </h5>
-              <p class="card-text" style="color: white">
+              <p class="card-text" style="color: white; font-size: 15px">
                 The team provides variety of flavours of sweet baked goods with
                 other fast food items. Dine with them to dig in some amazing
                 speciality of cookies and cakes.
@@ -818,7 +720,7 @@
                   ><a
                     href="https://www.bakenshake.in/"
                     target="_blank"
-                    style="color: wheat"
+                    style="color: wheat; font-size: 13px"
                     >Read More</a
                   ></small
                 >
@@ -828,18 +730,8 @@
         </div>
       </div>
 
-      <div
-        class="card mb-3 bg-dark"
-        style="
-          margin: 10px;
-          margin-top: 30px;
-          padding: 30px;
-          padding-left: 200px;
-          border: none;
-          margin-left: 70px;
-        "
-      >
-        <div class="row g-5">
+      <div class="card mb-3 bg-dark" style="margin: 7%; border: none">
+        <div class="row justify-content-center">
           <div class="col-md-3">
             <img
               src="images/rolls.jpg"
@@ -860,7 +752,7 @@
               >
                 Rolls Mania
               </h5>
-              <p class="card-text" style="color: white">
+              <p class="card-text" style="color: white; font-size: 15px">
                 Rolls for taste and coffee for souls describes the Rolls Mania.
                 It can be one of the cafe in your list when planning for a
                 weekend getaway.
@@ -870,7 +762,7 @@
                   ><a
                     href="https://www.rollsmania.com/"
                     target="_blank"
-                    style="color: wheat"
+                    style="color: wheat; font-size: 13px"
                     >Read More</a
                   ></small
                 >
@@ -880,7 +772,7 @@
         </div>
       </div>
       <!-- ================VIEW MORE BUTTON============== -->
-      <div style="text-align: center">
+      <div style="text-align: center; margin-top: 3%">
         <a
           class="btn planitinerary-btn"
           style="background: #e33d3d; color: #fff; margin: 20px"

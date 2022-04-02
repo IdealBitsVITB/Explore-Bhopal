@@ -11,14 +11,14 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    
+
     <!-- ======================= -->
-    <link rel="icon" type="image/x-icon" href="Images/LOGO.png">
+    <link rel="icon" type="image/x-icon" href="Images/LOGO.png" />
     <!-- ===========CSS========= -->
     <link rel="stylesheet" href="style.css" />
     <!-- ====================== -->
   </head>
-  <body >
+  <body>
     <script type="text/javascript">
       var changes = false;
       window.onbeforeunload = function () {
@@ -29,12 +29,9 @@
         }
       };
     </script>
-    
+
     <!-- =========NAVBAR========== -->
-    <nav
-      class="navbar navbar-expand-lg navbar-light bg-dark fixed-top"
-      
-    >
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="https://vitbhopal.ac.in/" target="_blank">
           <img
@@ -52,55 +49,48 @@
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
+          style="color: white"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span
+            ><img
+              src="Images/toggler.jpg"
+              alt="toggler"
+              height="35px"
+              width="45px"
+          /></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="padding-left: 60%">
+        <div
+          class="collapse navbar-collapse row justify-content-end"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav col-md-3">
             <!-- ===========HOME-NAVBAR=========== -->
-            <li class="nav-item" style="margin-left: 85%">
+            <li class="nav-item col-md-3">
               <a
                 class="nav-link"
                 aria-current="page"
                 href="index.html"
-                style="color: white; margin-top: 6px"
+                style="color: white"
                 onMouseOver="this.style.color='dimgray'"
                 onMouseOut="this.style.color='white'"
                 >Home</a
               >
             </li>
-            <!-- <li
-              class="nav-item"
-              style="padding-left: 10%;"
-            >
-              <a class="nav-link elem" href="#Malls" style="color: white;"
-              onMouseOver="this.style.color='dimgray'"
-              onMouseOut="this.style.color='white'" >Malls</a>
-            </li>
-            <li
-              class="nav-item"
-              style="padding-left: 10%;"
-            >
-              <a class="nav-link elem" href="#Attractions" style="color: white;"
-              onMouseOver="this.style.color='dimgray'"
-              onMouseOut="this.style.color='white'" 
-                >Attractions</a
+
+            <!-- ===========ABOUT US-NAVBAR=========== -->
+            <li class="nav-item col-md-3">
+              <a
+                class="nav-link"
+                href="about.html"
+                style="color: white"
+                onMouseOver="this.style.color='dimgray'"
+                onMouseOut="this.style.color='white'"
+                >About</a
               >
             </li>
-            <li
-              class="nav-item"
-              style="padding-left: 10%;"
-            >
-              <a class="nav-link elem" href="#Cafes"style="color: white;"
-              onMouseOver="this.style.color='dimgray'"
-              onMouseOut="this.style.color='white'"  >Cafes</a>
-            </li> -->
 
             <!-- ===========DROPDOWN-NAVBAR=========== -->
-            <li
-              class="nav-item dropdown"
-              style="margin-left: 40px; margin-top: 6px"
-            >
+            <li class="nav-item dropdown col-md-4">
               <a
                 class="nav-link dropdown-toggle"
                 href="#"
@@ -144,23 +134,6 @@
                 </li>
               </ul>
             </li>
-
-            <!-- ===========ABOUT US-NAVBAR=========== -->
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="about.html"
-                style="
-                  color: white;
-                  margin-left: 30px;
-                  position: absolute;
-                  margin-top: 6px;
-                "
-                onMouseOver="this.style.color='dimgray'"
-                onMouseOut="this.style.color='white'"
-                >About</a
-              >
-            </li>
           </ul>
         </div>
       </div>
@@ -188,7 +161,7 @@
       <div style="text-align: center; display: block; padding-top: 200px">
         <p
           style="
-            font-size: 70px;
+            font-size: 55px;
             color: white;
             font-family: 'Times New Roman', Times, serif;
           "
@@ -213,19 +186,14 @@
         style="height: 60px; width: 250px"
       />
       <!-- ============CARDS FOR Attractions============ -->
+
+      <!-- ============UDAYGIRI CAVES============ -->
       <div
         class="card mb-3 bg-dark"
-        style="
-          padding-top: 110px;
-          padding-bottom: 100px;
-          padding-right: 100px;
-          padding-left: 200px;
-          border: none;
-          margin-left: 70px;
-        "
+        style="margin: 7%; margin-top: 4%; border: none"
         id="Attractions"
       >
-        <div class="row g-5">
+        <div class="row justify-content-center">
           <div class="col-md-3 zoom">
             <img
               src="images/udayagiri caves.jpg"
@@ -235,7 +203,7 @@
             />
           </div>
           <div class="col-md-5">
-            <div class="card-body" style="padding-top: 0px">
+            <div class="card-body">
               <h5
                 class="card-title"
                 style="
@@ -246,25 +214,26 @@
               >
                 Udayagiri Caves
               </h5>
-              <p class="card-text" style="color: white">
+              <p class="card-text" style="color: white; font-size: 15px">
                 Udayagiri caves is 60 Kms from Bhopal. These are twenty rock-cut
                 caves of Hindus and Jain panthons. They were made during the
                 Gupta period.
               </p>
               <p class="card-text" style="color: white">
                 <a
-                href="https://goo.gl/maps/rTqWmvgn9sohK6y3A"
-                target="_blank"
-                style="color: white"
+                  href="https://goo.gl/maps/rTqWmvgn9sohK6y3A"
+                  target="_blank"
+                  style="color: white; font-size: 14px"
                 >
-                <small> From VIT Bhopal: 2hr 30mins [121 km]</small></a>
+                  <small> From VIT Bhopal: 2hr 30mins [121 km]</small></a
+                >
               </p>
               <p class="card-text">
                 <small class="text-muted"
                   ><a
                     href="https://placeandsee.com/wiki/udayagiri-caves"
                     target="_blank"
-                    style="color: wheat"
+                    style="color: wheat; font-size: 13px"
                     >Read More</a
                   ></small
                 >
@@ -274,18 +243,12 @@
         </div>
       </div>
 
+      <!-- ============VAN VIHAR============ -->
       <div
         class="card mb-3 bg-dark"
-        style="
-          margin: 10px;
-          margin-top: 30px;
-          padding: 30px;
-          padding-left: 200px;
-          border: none;
-          margin-left: 70px;
-        "
+        style="margin: 7%; margin-top: 5%; border: none"
       >
-        <div class="row g-5">
+        <div class="row justify-content-center">
           <div class="col-md-3 zoom">
             <img
               src="images/van vihar.jpeg"
@@ -295,7 +258,7 @@
             />
           </div>
           <div class="col-md-5">
-            <div class="card-body" style="padding-top: 0px">
+            <div class="card-body">
               <h5
                 class="card-title"
                 style="
@@ -306,24 +269,25 @@
               >
                 Van Vihar National Park
               </h5>
-              <p class="card-text" style="color: white">
+              <p class="card-text" style="color: white; font-size: 15px">
                 It is an amazing world of winged creatures, free ranging
                 ungulates and captive carnivores in the midst of greenery.
               </p>
               <p class="card-text" style="color: white">
                 <a
-                href="https://goo.gl/maps/LtLtU1UXdEHACt2t8"
-                target="_blank"
-                style="color: white"
+                  href="https://goo.gl/maps/LtLtU1UXdEHACt2t8"
+                  target="_blank"
+                  style="color: white; font-size: 14px"
                 >
-                <small> From VIT Bhopal: 1hr 40mins [72 km]</small></a>
+                  <small> From VIT Bhopal: 1hr 40mins [72 km]</small></a
+                >
               </p>
               <p class="card-text">
                 <small class="text-muted"
                   ><a
                     href="https://vanviharnationalpark.org/"
                     target="_blank"
-                    style="color: wheat"
+                    style="color: wheat; font-size: 13px"
                     >Read More</a
                   ></small
                 >
@@ -333,16 +297,12 @@
         </div>
       </div>
 
+      <!-- ============MUSEUM============ -->
       <div
         class="card mb-3 bg-dark"
-        style="
-          padding: 60px;
-          padding-left: 200px;
-          border: none;
-          margin-left: 70px;
-        "
+        style="margin: 7%; margin-top: 5%; border: none"
       >
-        <div class="row g-5">
+        <div class="row justify-content-center">
           <div class="col-md-3 zoom">
             <img
               src="images/museum.jpeg"
@@ -352,7 +312,7 @@
             />
           </div>
           <div class="col-md-5">
-            <div class="card-body" style="padding-top: 0px">
+            <div class="card-body">
               <h5
                 class="card-title"
                 style="
@@ -363,25 +323,26 @@
               >
                 National Museum of Mankind
               </h5>
-              <p class="card-text" style="color: white">
+              <p class="card-text" style="color: white; font-size: 15px">
                 The Indira Gandhi Rashtriya Manav Sangrahalaya is an
                 anthropology museum that carries the stories of human and
                 cultural evolution in India.
               </p>
               <p class="card-text" style="color: white">
                 <a
-                href="https://goo.gl/maps/12GB532XssckgD2G7"
-                target="_blank"
-                style="color: white"
+                  href="https://goo.gl/maps/12GB532XssckgD2G7"
+                  target="_blank"
+                  style="color: white; font-size: 14px"
                 >
-                <small> From VIT Bhopal: 1hr 30mins [71 km]</small></a>
+                  <small> From VIT Bhopal: 1hr 30mins [71 km]</small></a
+                >
               </p>
               <p class="card-text">
                 <small class="text-muted"
                   ><a
                     href="https://bhopal.tourismindia.co.in/indira-gandhi-rashtriya-manav-sangrahalaya-national-museum-of-mankind-bhopal"
                     target="_blank"
-                    style="color: wheat"
+                    style="color: wheat; font-size: 13px"
                     >Read More</a
                   ></small
                 >
@@ -391,16 +352,12 @@
         </div>
       </div>
 
+      <!-- ============BHOJPUR TEMPLE============ -->
       <div
         class="card mb-3 bg-dark"
-        style="
-          padding: 60px;
-          padding-left: 200px;
-          border: none;
-          margin-left: 70px;
-        "
+        style="margin: 7%; margin-top: 5%; border: none"
       >
-        <div class="row g-5">
+        <div class="row justify-content-center">
           <div class="col-md-3 zoom">
             <img
               src="images/bhoj temple.jpg"
@@ -410,7 +367,7 @@
             />
           </div>
           <div class="col-md-5">
-            <div class="card-body" style="padding-top: 0px">
+            <div class="card-body">
               <h5
                 class="card-title"
                 style="
@@ -421,25 +378,26 @@
               >
                 Bhojpur Temple
               </h5>
-              <p class="card-text" style="color: white">
+              <p class="card-text" style="color: white; font-size: 15px">
                 Bhojpur temple near Bhopal has one of the largest Shivaling cut
                 from one rock. Its famous for the incomplete Bhojesvar temple
                 dedicated to Lord Shiva.
               </p>
               <p class="card-text" style="color: white">
                 <a
-                href="https://goo.gl/maps/4y9ufiWJjSrRZMx78"
-                target="_blank"
-                style="color: white"
+                  href="https://goo.gl/maps/4y9ufiWJjSrRZMx78"
+                  target="_blank"
+                  style="color: white; font-size: 14px"
                 >
-                <small> From VIT Bhopal: 2hr 10mins [96 km]</small></a>
+                  <small> From VIT Bhopal: 2hr 10mins [96 km]</small></a
+                >
               </p>
               <p class="card-text">
                 <small class="text-muted"
                   ><a
                     href="https://www.tripadvisor.in/Attraction_Review-g1508512-d3683205-Reviews-Bhojeshwar_Temple-Bhojpur_Raisen_District_Madhya_Pradesh.html"
                     target="_blank"
-                    style="color: wheat"
+                    style="color: wheat; font-size: 13px"
                     >Read More</a
                   ></small
                 >
@@ -449,16 +407,12 @@
         </div>
       </div>
 
+      <!-- ============CRESCENT WATER PARK============ -->
       <div
         class="card mb-3 bg-dark"
-        style="
-          padding: 60px;
-          padding-left: 200px;
-          border: none;
-          margin-left: 70px;
-        "
+        style="margin: 7%; margin-top: 5%; border: none"
       >
-        <div class="row g-5">
+        <div class="row justify-content-center">
           <div class="col-md-3 zoom">
             <img
               src="images/crescent2.jpg"
@@ -468,7 +422,7 @@
             />
           </div>
           <div class="col-md-5">
-            <div class="card-body" style="padding-top: 0px">
+            <div class="card-body">
               <h5
                 class="card-title"
                 style="
@@ -479,25 +433,26 @@
               >
                 Crescent Water Park
               </h5>
-              <p class="card-text" style="color: white">
+              <p class="card-text" style="color: white; font-size: 15px">
                 Housing the longest infinity pool in the whole of Central India,
                 Crescent Water Park is yet another popular attraction in Madhya
                 Pradesh.
               </p>
-              <p class="card-text" style="color: white">
+              <p class="card-text" style="color: white; font-size: 14px">
                 <a
-                href="https://g.page/crescentwaterparksehore?share"
-                target="_blank"
-                style="color: white"
+                  href="https://g.page/crescentwaterparksehore?share"
+                  target="_blank"
+                  style="color: white"
                 >
-                <small> From VIT Bhopal: 30mins [28 km]</small></a>
+                  <small> From VIT Bhopal: 30mins [28 km]</small></a
+                >
               </p>
               <p class="card-text">
                 <small class="text-muted"
                   ><a
                     href="http://www.crescentwaterpark.in/"
                     target="_blank"
-                    style="color: wheat"
+                    style="color: wheat; font-size: 13px"
                     >Read More</a
                   ></small
                 >
@@ -507,17 +462,12 @@
         </div>
       </div>
 
+      <!-- ============UPPER LAKE============ -->
       <div
         class="card mb-3 bg-dark"
-        style="
-          padding: 100px;
-          padding-left: 200px;
-          border: none;
-          margin-left: 70px;
-        "
-        id="Attractions"
+        style="margin: 7%; margin-top: 5%; border: none"
       >
-        <div class="row g-5">
+        <div class="row justify-content-center">
           <div class="col-md-3 zoom">
             <img
               src="images/upperlake2.jpg"
@@ -527,7 +477,7 @@
             />
           </div>
           <div class="col-md-5">
-            <div class="card-body" style="padding-top: 0px">
+            <div class="card-body">
               <h5
                 class="card-title"
                 style="
@@ -538,19 +488,20 @@
               >
                 Upper Lake
               </h5>
-              <p class="card-text" style="color: white">
+              <p class="card-text" style="color: white; font-size: 15px">
                 Upper Lake aka Bhojtal lies on the west and is the soul of
                 Bhopal. It's the oldest human-made lake in the country and it's
                 grand presence kept Bhopal amongst the greenest state capitals
                 of the country.
               </p>
-              <p class="card-text" style="color: white">
+              <p class="card-text" style="color: white; font-size: 14px">
                 <a
-                href="https://goo.gl/maps/qnmonqnSRB2daFTMA"
-                target="_blank"
-                style="color: white"
+                  href="https://goo.gl/maps/qnmonqnSRB2daFTMA"
+                  target="_blank"
+                  style="color: white; font-size: 13px"
                 >
-                <small> From VIT Bhopal: 1hr 10mins [60 km]</small></a>
+                  <small> From VIT Bhopal: 1hr 10mins [60 km]</small></a
+                >
               </p>
               <p class="card-text">
                 <small class="text-muted"
@@ -567,18 +518,12 @@
         </div>
       </div>
 
+      <!-- ============GAUHAR MAHAL============ -->
       <div
         class="card mb-3 bg-dark"
-        style="
-          margin: 10px;
-          margin-top: 30px;
-          padding: 30px;
-          padding-left: 200px;
-          border: none;
-          margin-left: 70px;
-        "
+        style="margin: 7%; margin-top: 5%; border: none"
       >
-        <div class="row g-5">
+        <div class="row justify-content-center">
           <div class="col-md-3 zoom">
             <img
               src="images/gauhar mahal.jpeg"
@@ -588,7 +533,7 @@
             />
           </div>
           <div class="col-md-5">
-            <div class="card-body" style="padding-top: 0px">
+            <div class="card-body">
               <h5
                 class="card-title"
                 style="
@@ -599,7 +544,7 @@
               >
                 Gauhar Mahal
               </h5>
-              <p class="card-text" style="color: white">
+              <p class="card-text" style="color: white; font-size: 15px">
                 Gauhar Mahal is a palace that was built in the early 19th
                 century by Qudisiya Begum or Gohar Begum, the first woman ruler
                 of Bhopal. It is a unique amalgamation of Hindu and Mughal
@@ -607,18 +552,19 @@
               </p>
               <p class="card-text" style="color: white">
                 <a
-                href="https://goo.gl/maps/e9Jbg8kBARGJ5aQv7"
-                target="_blank"
-                style="color: white"
+                  href="https://goo.gl/maps/e9Jbg8kBARGJ5aQv7"
+                  target="_blank"
+                  style="color: white; font-size: 14px"
                 >
-                <small> From VIT Bhopal: 1hr 15mins [66 km]</small></a>
+                  <small> From VIT Bhopal: 1hr 15mins [66 km]</small></a
+                >
               </p>
               <p class="card-text">
                 <small class="text-muted"
                   ><a
                     href="https://www.incredibleindia.org/content/incredible-india-v2/en/destinations/bhopal/gohar--gauhar--mahal.html"
                     target="_blank"
-                    style="color: wheat"
+                    style="color: wheat; font-size: 13px"
                     >Read More</a
                   ></small
                 >
@@ -628,16 +574,12 @@
         </div>
       </div>
 
+      <!-- ============TAJUL MASJID============ -->
       <div
         class="card mb-3 bg-dark"
-        style="
-          padding: 60px;
-          padding-left: 200px;
-          border: none;
-          margin-left: 70px;
-        "
+        style="margin: 7%; margin-top: 5%; border: none"
       >
-        <div class="row g-5">
+        <div class="row justify-content-center">
           <div class="col-md-3 zoom">
             <img
               src="images/tajul masjid.jpg"
@@ -647,7 +589,7 @@
             />
           </div>
           <div class="col-md-5">
-            <div class="card-body" style="padding-top: 0px">
+            <div class="card-body">
               <h5
                 class="card-title"
                 style="
@@ -658,25 +600,26 @@
               >
                 Taj-ul-Masjid
               </h5>
-              <p class="card-text" style="color: white">
+              <p class="card-text" style="color: white; font-size: 15px">
                 Taj-ul-Masajid or 'Crown among Mosques' is a mosque situated in
                 Bhopal, India. It is the largest mosque in India and one of the
                 largest mosques in Asia.
               </p>
               <p class="card-text" style="color: white">
                 <a
-                href="https://goo.gl/maps/yxTJWVAX7j79eJyk9"
-                target="_blank"
-                style="color: white"
+                  href="https://goo.gl/maps/yxTJWVAX7j79eJyk9"
+                  target="_blank"
+                  style="color: white; font-size: 14px"
                 >
-                <small> From VIT Bhopal: 1hr 15mins [65 km]</small></a>
+                  <small> From VIT Bhopal: 1hr 15mins [65 km]</small></a
+                >
               </p>
               <p class="card-text">
                 <small class="text-muted"
                   ><a
                     href="https://bhopal.nic.in/en/tourist-place/taj-ul-masajid/"
                     target="_blank"
-                    style="color: wheat"
+                    style="color: wheat; font-size: 13px"
                     >Read More</a
                   ></small
                 >
@@ -686,16 +629,12 @@
         </div>
       </div>
 
+      <!-- ============SHAUKAT MAHAL============ -->
       <div
         class="card mb-3 bg-dark"
-        style="
-          padding: 60px;
-          padding-left: 200px;
-          border: none;
-          margin-left: 70px;
-        "
+        style="margin: 7%; margin-top: 5%; border: none"
       >
-        <div class="row g-5">
+        <div class="row justify-content-center">
           <div class="col-md-3 zoom">
             <img
               src="images/shaukat mahal.jpg"
@@ -705,7 +644,7 @@
             />
           </div>
           <div class="col-md-5">
-            <div class="card-body" style="padding-top: 0px">
+            <div class="card-body">
               <h5
                 class="card-title"
                 style="
@@ -716,25 +655,26 @@
               >
                 Shaukat Mahal
               </h5>
-              <p class="card-text" style="color: white">
+              <p class="card-text" style="color: white; font-size: 15px">
                 Shaukat Mahal is an important historical landmark in Bhopal
                 which has a distinct architecture - a blend of Indo-Islamic and
                 European styles.
               </p>
               <p class="card-text" style="color: white">
                 <a
-                href="https://goo.gl/maps/wsoDBoJbmqpShFHi6"
-                target="_blank"
-                style="color: white"
+                  href="https://goo.gl/maps/wsoDBoJbmqpShFHi6"
+                  target="_blank"
+                  style="color: white; font-size: 14px"
                 >
-                <small> From VIT Bhopal: 1hr 15mins [67 km]</small></a>
+                  <small> From VIT Bhopal: 1hr 15mins [67 km]</small></a
+                >
               </p>
               <p class="card-text">
                 <small class="text-muted"
                   ><a
                     href="https://www.trawell.in/madhya-pradesh/bhopal/shaukat-mahal"
                     target="_blank"
-                    style="color: wheat"
+                    style="color: wheat; font-size: 13px"
                     >Read More</a
                   ></small
                 >
@@ -744,18 +684,12 @@
         </div>
       </div>
 
+      <!-- ============SANCHI STUPA============ -->
       <div
         class="card mb-3 bg-dark"
-        style="
-          padding-top: 60px;
-          padding-bottom: 40px;
-          padding-left: 200px;
-          padding-right: 60px;
-          border: none;
-          margin-left: 70px;
-        "
+        style="margin: 7%; margin-top: 5%; border: none"
       >
-        <div class="row g-5">
+        <div class="row justify-content-center">
           <div class="col-md-3 zoom">
             <img
               src="images/Sanchi.jpg"
@@ -765,7 +699,7 @@
             />
           </div>
           <div class="col-md-5">
-            <div class="card-body" style="padding-top: 0px">
+            <div class="card-body">
               <h5
                 class="card-title"
                 style="
@@ -776,7 +710,7 @@
               >
                 Sanchi Stupa
               </h5>
-              <p class="card-text" style="color: white">
+              <p class="card-text" style="color: white; font-size: 15px">
                 Great Stupa, the most noteworthy of the structures at the
                 historic site of Sanchi in Madhya Pradesh state, India. It is
                 one of the oldest Buddhist monuments in the country and the
@@ -784,18 +718,19 @@
               </p>
               <p class="card-text" style="color: white">
                 <a
-                href="https://goo.gl/maps/EZEhpQCa4nnfJihs5"
-                target="_blank"
-                style="color: white"
+                  href="https://goo.gl/maps/EZEhpQCa4nnfJihs5"
+                  target="_blank"
+                  style="color: white; font-size: 14px"
                 >
-                <small> From VIT Bhopal: 2hr 15mins [113 km]</small></a>
+                  <small> From VIT Bhopal: 2hr 15mins [113 km]</small></a
+                >
               </p>
               <p class="card-text">
                 <small class="text-muted"
                   ><a
                     href="https://bhopal.tourismindia.co.in/sanchi-stupa-bhopal"
                     target="_blank"
-                    style="color: wheat"
+                    style="color: wheat; font-size: 13px"
                     >Read More</a
                   ></small
                 >
